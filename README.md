@@ -1,3 +1,15 @@
+Parallel Finite-Element Solver for the Wave Equation
+
+Team project for Numerical Methods for Partial Differential Equations, Politecnico di Milano (2026), with Teresa Barrella, Luca Colangelo and Milica Sanjevic.
+
+Goal: solve the wave equation in 2D and 3D with a scalable, distributed finite-element solver.
+
+Method: deal.II with MPI domain decomposition (p4est), adaptive mesh refinement driven by the Kelly error estimator, explicit leapfrog vs implicit Newmark time stepping (CG + ILU), absorbing boundary conditions and sponge layers.
+
+Results: optimal convergence rates verified with manufactured solutions, energy conservation checks for both schemes, strong and weak scaling tests.
+
+**Slides:** [presentation on Canva](https://canva.link/kwhibxul7cryiqo)
+
 # Solving the Wave Equation — MPI Parallel FEM Solver
 
 A distributed-memory finite element solver for the 2D/3D scalar wave equation,
